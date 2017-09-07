@@ -1,5 +1,7 @@
 package com.tel.pathfinder.main;
 
+import com.tel.pathfinder.controller.AstarPathFinderExecutor;
+
 /**
  * Starter class
  * 
@@ -10,6 +12,10 @@ public class Starter {
 
 	public static void main(String[] args) {
 
-		System.out.println("Hi Welcome");
+		// instance of controller
+		AstarPathFinderExecutor controller = new AstarPathFinderExecutor();
+		// find shortest path
+		controller.findShortedPath();
+
 	}
 }
